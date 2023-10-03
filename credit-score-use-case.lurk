@@ -1,0 +1,6 @@
+!(load "PATH/credit-score.lurk")
+!(load "PATH/query.lurk")
+
+(credit_score_OK? cs)
+
+!(prove)
