@@ -1,7 +1,7 @@
 # A simple credit-score proof generation and verification in Lurk
 
 1. Install Rust: https://www.rust-lang.org/
-2. Install Lurk: https://www.rust-lang.org/
+2. Install Lurk: https://www.lurk-lang.org/
 3. Clone this repo: `git clone
    https://github.com/ChristianoBraga/credit-score`
 4. Open a shell.
