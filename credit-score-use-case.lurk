@@ -1,5 +1,5 @@
-!(load "PATH/credit-score.lurk")
-!(load "PATH/query.lurk")
+!(load "credit-score.lurk")
+!(load "query.lurk")
 
 (credit_score_OK? cs)
 
