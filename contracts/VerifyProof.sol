@@ -1,0 +1,11 @@
+// SPDX-License-Identifier: MIT
+
+pragma solidity ^0.8.0;
+
+contract VerifyProof {
+    event VerifyProof(address indexed de, string key, string proof);
+
+    function fireVerifyProof(string memory key, string memory proof) public {
+        emit VerifyProof(msg.sender, key, proof);
+    }
+}

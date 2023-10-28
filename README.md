@@ -30,12 +30,35 @@ and the loan is then granted.
 
 ## Installation and execution
 
+### Without Hardhat
+
 1. Install Rust: https://www.rust-lang.org/
 2. Install Lurk: https://www.lurk-lang.org/
 3. Clone this repo: `git clone
    https://github.com/ChristianoBraga/credit-score`
 4. Open a shell.
-5. Change to `credit-score` directory.
-6. Run `chmod +x credit-score-use-case.sh`
-7. Run `./credit-score-use-case.sh`
-8. Run `lurk verify "Nova_Pallas_10_29beb536d2984dff8873c750f831cd1cf41df2b7c7433480036829804a227637"`
+5. Change to `credit-score/src/js` directory.
+6. Run `lurk credit-score-use-case.lurk`
+7. Run `lurk verify "Nova_Pallas_10_29beb536d2984dff8873c750f831cd1cf41df2b7c7433480036829804a227637"`
+
+### With Hardhat 
+
+**(DRAFT)**
+
+A **warm** and **big** _thank you_ to [Pedro
+Magalhães](https://www.linkedin.com/in/pemagalhaes), CTO of
+[FormulaChain](https://www.linkedin.com/company/formulachain/), for
+the Solidity [event
+scheme](https://github.com/Formula-Chain/etherListen) this example is
+based on.
+
+#### Install Hardhat
+#### Initialize a Hardhat project
+#### Generate a credit-score proof 
+    1. `cd src/lurk/`
+    2. `lurk credit-score-use-case.lurk`
+    3. `cp ~/.lurk/proofs/Nova_Pallas_10_29beb536d2984dff8873c750f831cd1cf41df2b7c7433480036829804a227637.proof ../../`
+    4. `cd ../../`
+#### Send the proof on chain and notify verifier
+    1. `npx hardhat console --network localhost`
+    2. `await hre.run("demo", {key:"Nova_Pallas_10_29beb536d2984dff8873c750f831cd1cf41df2b7c7433480036829804a227637"})`
